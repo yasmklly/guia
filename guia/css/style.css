@@ -1,0 +1,173 @@
+body {
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-abstrato-gradiente-azul-azul-escuro-liso-com-vinheta-preta-studio_1258-79717.jpg?t=st=1744985652~exp=1744989252~hmac=1409a9f0081a224cc310772c26dbf70d579f9a643c860507ae33be6a9d9ca807&w=996");
+}
+ * {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+  }
+  
+  h1, h2, h3, h4, p {
+    color: #ffffff;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.4s;
+  }
+  
+  a:hover {
+    color: #ffffff;
+  }
+  
+  /* Navbar */
+  #navbar {
+    padding: 1rem 3.0rem;
+    border: 1px solid #ffffff;
+    border-radius: 13px;
+  }
+  /*rem relativo*/
+  #navbar-inner {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+    #legenda{
+  
+  max-width: 1200px;
+  margin: 0 auto;
+    }
+  
+  #nav-links {
+    display: flex;
+    gap: 1rem;
+    margin-left: 86%;
+  }
+  
+  /* conteúdo principal */
+  .container {
+    display: flex;
+    padding: 2rem 2.5rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /*flex-grow: Define a capacidade de crescimento de um item flexível em relação aos outros itens flexíveis no contêiner flexível.
+  flex-shrink: Define a capacidade de encolhimento de um item flexível em relação aos outros itens flexíveis no contêiner flexível.
+  flex-basis: Define o tamanho inicial de um item flexível antes que ele comece a crescer ou encolher.*/
+  #posts-container {
+    flex: 3 1 0;
+  }
+  
+  .post {
+    margin-bottom: 2.5rem;
+  }
+  
+  .post img {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+  
+  .title,
+  .description,
+  .author {
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .author {
+    color: #54b0ee;
+    font-weight: bold;
+  }
+  
+  /* barra lateral */
+  #sidebar {
+    flex: 1 1 0;
+  }
+  
+  #search-bar,
+  #guia,
+  #tags,
+  #contact {
+    padding: 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 13px;
+    margin-bottom: 1rem;
+  }
+  
+  #search-bar h4,
+  #guia h4,
+  #tags h4,
+  #contact h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+  
+  #search-bar form {
+    display: flex;
+  }
+  
+  #search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  #search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #54b0ee;
+    color: #fff;
+    border: none;
+  }
+  
+  #guia li {
+    margin-bottom: 1rem;
+  }
+
+  #contact li{
+    margin-bottom: 1rem;
+  }
+
+  
+  #tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  #tags-container a {
+    background-color: #54b0ee;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+  }
+  
+  /* Rodapé */
+  #footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  #footer h2,
+  #footer p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsivo */
+  /*coloca para telas até 450 que o conteudo dentro dessa classe possa ser
+  visto em varias linhas*/
+  @media (max-width: 450px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
